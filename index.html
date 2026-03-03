@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>salsa calendar</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#111111" />
+
+  <!-- Google Font (clean modern look) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.5.0/ical.min.js"></script>
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <h1 class="app-title">salsa calendar</h1>
+
+    <!-- Name Tags -->
+    <div class="legend">
+      <div class="legend-item" style="--color:#CC4055">Laura</div>
+      <div class="legend-item" style="--color:#83d6d3">Anna</div>
+      <div class="legend-item" style="--color:#2d6bb3">Ava</div>
+      <div class="legend-item" style="--color:#549665">Sofia</div>
+    </div>
+
+    <div id="calendar"></div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

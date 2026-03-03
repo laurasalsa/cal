@@ -1,0 +1,127 @@
+:root {
+  --bg: #f7f8fa;
+  --card: #ffffff;
+  --text: #1f1f1f;
+  --muted: #777;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+}
+
+.app-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+/* Legend / name tags */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.legend-item {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+.legend-item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: var(--color);
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Calendar container */
+
+#calendar {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* FullCalendar overrides */
+
+.fc {
+  font-size: 14px;
+}
+
+.fc-toolbar {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fc-toolbar-chunk {
+  display: flex;
+  justify-content: center;
+}
+
+.fc-button {
+  background: #e3e5e6 !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 6px 10px !important;
+  font-size: 13px !important;
+}
+
+.fc-button-active {
+  background: #111 !important;
+  color: white !important;
+}
+
+.fc-timegrid-slot {
+  height: 45px !important;
+}
+
+.fc-event {
+  border-radius: 8px !important;
+  padding: 2px 4px !important;
+  font-size: 12px !important;
+}
+
+.fc-timegrid-now-indicator-line {
+  border-color: #000000 !important;
+}
+
+.fc-day-today {
+    background-color: #ffffff !important;
+}
+
+@media (max-width: 480px) {
+  .fc-toolbar-title {
+    font-size: 16px !important;
+  }
+
+  .fc-button {
+    padding: 5px 8px !important;
+    font-size: 12px !important;
+  }
+}
