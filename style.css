@@ -23,6 +23,15 @@ body {
   padding: 20px 16px 40px;
 }
 
+/* PC/Desktop adjustment */
+@media (min-width: 1024px) {
+  .app-container {
+    /* 75% width leaves about 12.5% (a ruler's width) on each side */
+    max-width: 80%; 
+    padding: 40px 0; 
+  }
+}
+
 .app-title {
   font-size: 22px;
   font-weight: 600;
@@ -130,3 +139,4 @@ body {
   }
 
 }
+
