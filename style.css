@@ -25,10 +25,16 @@ body {
 
 /* PC/Desktop adjustment */
 @media (min-width: 1024px) {
-  .app-container {
-    /* 75% width leaves about 12.5% (a ruler's width) on each side */
+  /* Apply the wide layout ONLY if it's NOT the Day View */
+  .app-container:not(:has(.fc-timeGridDay-view, .fc-dayGridDay-view)) {
     max-width: 80%; 
     padding: 40px 0; 
+  }
+
+  /* Keep Day View centered and slim, just like mobile */
+  .app-container:has(.fc-timeGridDay-view, .fc-dayGridDay-view) {
+    max-width: 600px;
+    padding: 40px 0;
   }
 }
 
@@ -139,4 +145,5 @@ body {
   }
 
 }
+
 
