@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   const calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: "timeGridDay", // 👈 DEFAULT DAY VIEW
-    slotMinTime: "06:00:00", // EDITED
-    slotMaxTime: "20:00:00",
+    slotMinTime: "08:00:00", // EDITED
+    slotMaxTime: "18:00:00",
     weekends: false,
 
     headerToolbar: {
@@ -94,4 +94,5 @@ document.addEventListener("DOMContentLoaded", async function () {
   });
 
   calendar.render();
+
 });
