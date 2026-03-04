@@ -64,6 +64,12 @@ body {
   position: relative;
 }
 
+.legend-item.hidden {
+  opacity: 0.4;
+  filter: grayscale(100%);
+  background: #eee;
+}
+
 .legend-item::before {
   content: "";
   width: 10px;
@@ -143,7 +149,4 @@ body {
     padding: 5px 8px !important;
     font-size: 12px !important;
   }
-
 }
-
-
